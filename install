@@ -5,3 +5,4 @@
  kubectl config  set-context k3d-k3s-default
  kubectl config  set-context k3d-local-k8s
  kubectl config  current-context 
+ kubectl get node
