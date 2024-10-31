@@ -1,4 +1,9 @@
- k3d cluster create --agents 2 -v /data/k3dvol@agent:0,1 -v /data/k3dvol:/data/k3dvol@server:0
+
+
+k3d cluster create --agents 2 -v /data:/var/lib/rancher/k3s/storage@agent:0,1 -v /data:/var/lib/rancher/k3s/storage@server:0
+
+
+
  kubectl config get-clusters
  kubectl config  get-contexts 
  kubectl config   get-users 
