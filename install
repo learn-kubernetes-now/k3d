@@ -1,3 +1,7 @@
  k3d cluster create --agents 2 -v /data/k3dvol@agent:0,1 -v /data/k3dvol:/data/k3dvol@server:0
-
- 
+ kubectl config get-clusters
+ kubectl config  get-contexts 
+ kubectl config   get-users 
+ kubectl config  set-context k3d-k3s-default
+ kubectl config  set-context k3d-local-k8s
+ kubectl config  current-context 
